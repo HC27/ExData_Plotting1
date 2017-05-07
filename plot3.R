@@ -7,5 +7,6 @@ dates[["full_date"]]<-date_col
 with(dates, plot(full_date,Sub_metering_1,type="l", ylab="Energy sub metering"))
 lines(dates$full_date, dates$Sub_metering_2, col="red")
 lines(dates$full_date, dates$Sub_metering_3, col="blue")
+legend("topright", c("sub metering 1", "sub metering 2", "sub metering 3"), col = c("black", "red", "blue"), lty=c(1,1))
 
-dev.off()par()
+dev.off()
